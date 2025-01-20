@@ -1,0 +1,9 @@
+export 'client.dart';
+export 'presentation/widgets/bottom_nav_bar/bottom_nav_bar.dart';
+export 'presentation/widgets/bottom_nav_bar/bottom_nav_bar_item.dart';
+export 'presentation/widgets/tour_package/days_in_city.dart';
+export 'presentation/widgets/tour_package/tour_package_feature.dart';
+export 'utils/colors.dart';
+export 'utils/sizes.dart';
+export 'utils/styles.dart';
+export 'utils/theme.dart';
