@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:travel_app/core/core.dart';
+import 'package:travel_app/onboarding/presentation/pages/onboarding_view.dart';
 import 'package:travel_app/package_detail/presentation/pages/package_detail_view.dart';
 
 import 'home/data/repositories/popular_places_repository.dart';
@@ -25,13 +26,7 @@ class TravelApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: AppThemes.lightTheme,
-      home: PackageDetailView(
-        viewModel: PackageDetailViewModel(
-          repo: PackageRepository(
-            client: ApiClient(),
-          ),
-        ),
-      ),
+      home: OnboardingView(),
     );
   }
 }
