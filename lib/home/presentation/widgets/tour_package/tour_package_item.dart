@@ -7,26 +7,20 @@ import 'package:travel_app/home/presentation/widgets/tour_package/tour_package_i
 
 import 'tour_package_item_image.dart';
 
-class TourPackageItem extends StatefulWidget {
+class TourPackageItem extends StatelessWidget {
   const TourPackageItem({
     super.key,
   });
 
   @override
-  State<TourPackageItem> createState() => _TourPackageItemState();
-}
-
-class _TourPackageItemState extends State<TourPackageItem> {
-  double currentSliderValue = 0;
-  ScrollController controller = ScrollController();
-  @override
   Widget build(BuildContext context) {
     return Center(
       child: Container(
         width: 376 * AppSizes.wratio,
-        height: 670 * AppSizes.hratio,
+        height: 640 * AppSizes.hratio,
         padding: const EdgeInsets.all(6),
         decoration: BoxDecoration(
+          color: Colors.white ,
           borderRadius: BorderRadius.circular(15),
           border: Border.all(
             color: const Color(0xFF4B4B4B).withValues(alpha: 0.5),
@@ -40,23 +34,7 @@ class _TourPackageItemState extends State<TourPackageItem> {
             TourPackageItemImage(),
             TourPackageItemTitle(),
             TourPackageItemFeatures(),
-            TourPackageItemTariffs(controller: controller),
-            SizedBox(
-              width: double.infinity,
-              height: 4,
-              child: Slider(
-                value: currentSliderValue,
-                max: 100,
-                min: 0,
-                allowedInteraction: SliderInteraction.tapAndSlide,
-                onChanged: (value) {
-                  currentSliderValue = value;
-                  setState(() {});
-                },
-
-              ),
-            ),
-            Spacer(),
+            TourPackageItemTariffs(),
             TourPackageItemButton(),
           ],
         ),

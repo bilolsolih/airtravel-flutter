@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:travel_app/core/core.dart';
 
 import '../travel_svg_picture_in_container.dart';
@@ -72,6 +73,20 @@ class Tariff extends StatelessWidget {
                 ],
               ),
             ),
+            Positioned(
+              bottom: 6,
+              child: Container(
+                height: 1,
+                width: 64,
+                color: Colors.white,
+                clipBehavior: Clip.none,
+                alignment: Alignment.center,
+              ),
+            ),
+            Positioned(
+              bottom: -2,
+              child: DownButton(),
+            ),
             Align(
               alignment: Alignment.topCenter,
               child: Container(
@@ -81,10 +96,7 @@ class Tariff extends StatelessWidget {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(11),
                   color: Colors.white,
-                  border: Border.all(
-                    color: AppColors.mainGreen,
-                    width: 1,
-                  ),
+                  border: Border.all(color: AppColors.mainGreen, width: 1),
                 ),
                 child: const Text(
                   "Ekonom",
@@ -104,7 +116,26 @@ class Tariff extends StatelessWidget {
   }
 }
 
+class DownButton extends StatelessWidget {
+  const DownButton({
+    super.key,
+  });
 
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: 16,
+      height: 16,
+      padding: EdgeInsets.all(1),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(8),
+        border: Border.all(color: AppColors.darkGreen, width: 1),
+      ),
+      child: SvgPicture.asset("assets/icons/down-arrow.svg"),
+    );
+  }
+}
 
 class TariffItemFeature extends StatelessWidget {
   const TariffItemFeature({
@@ -156,4 +187,3 @@ class TariffItemFeature extends StatelessWidget {
     );
   }
 }
-

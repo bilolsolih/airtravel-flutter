@@ -18,5 +18,13 @@ class AppThemes {
       surface: Colors.transparent,
       onSurface: Colors.black,
     ),
+    scrollbarTheme: ScrollbarThemeData(
+      thickness: WidgetStateProperty.all(8),
+      thumbColor: WidgetStatePropertyAll(AppColors.mainGreen),
+      thumbVisibility: WidgetStatePropertyAll(true),
+      trackVisibility: WidgetStatePropertyAll(true),
+      interactive: true,
+      mainAxisMargin: 20,
+    ),
   );
 }

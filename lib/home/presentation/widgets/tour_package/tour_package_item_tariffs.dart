@@ -4,36 +4,34 @@ import 'package:travel_app/core/core.dart';
 import 'tariff_item.dart';
 
 class TourPackageItemTariffs extends StatelessWidget {
-  const TourPackageItemTariffs({
+  TourPackageItemTariffs({
     super.key,
-    required this.controller,
   });
 
-  final ScrollController controller;
+  final ScrollController controller = ScrollController();
 
   @override
   Widget build(BuildContext context) {
     return Column(
-      spacing: 10,
       crossAxisAlignment: CrossAxisAlignment.start,
+      mainAxisSize: MainAxisSize.min,
       children: [
-        const Text(
-          "Tariflar",
-          style: AppStyles.itemSectionTitle,
-        ),
+        const Text("Tariflar", style: AppStyles.itemSectionTitle),
         SizedBox(
-          height: 96,
-          child: ListView(
+          height: 122,
+          child: Scrollbar(
             controller: controller,
-            shrinkWrap: true,
-            scrollDirection: Axis.horizontal,
-            children: const [
-              Tariff(),
-              SizedBox(width: 10),
-              Tariff(),
-              SizedBox(width: 10),
-              Tariff(),
-            ],
+            child: ListView(
+              controller: controller,
+              scrollDirection: Axis.horizontal,
+              children: const [
+                Tariff(),
+                SizedBox(width: 10),
+                Tariff(),
+                SizedBox(width: 10),
+                Tariff(),
+              ],
+            ),
           ),
         ),
       ],
