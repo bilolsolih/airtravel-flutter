@@ -180,6 +180,7 @@ class ApiClient {
             {
               'type': 'flight',
               'title': 'Uchish',
+              'image': null,
               'time': '8:30',
               'field_1': 'Toshkent',
               'field_2': 'Madina',
@@ -187,6 +188,7 @@ class ApiClient {
             {
               'type': 'housing',
               'title': 'Mehmonxona',
+              'image': 'assets/images/places/malayziya.png',
               'time': '11:30',
               'field_1': 'New Madina Hotel',
               'field_2': 'New Madinah mehmonxonasining har bir xonasida vanna va xalat bilan jihozlangan shaxsiy ... ',
@@ -194,6 +196,7 @@ class ApiClient {
             {
               'type': 'visit',
               'title': 'Ziyoratgoh',
+              'image': 'assets/images/places/malayziya.png',
               'time': '8:30',
               'field_1': 'Arofat tog\'i',
               'field_2': 'Arafot — Makkadan 20 km uzoqlikda joylashgan, 11 — 12 km va kengligi 6,5 km boʻlgan vodiy...',
@@ -206,6 +209,7 @@ class ApiClient {
             {
               'type': 'flight',
               'title': 'Uchish',
+              'image': null,
               'time': '8:30',
               'field_1': 'Toshkent',
               'field_2': 'Madina',
@@ -213,6 +217,7 @@ class ApiClient {
             {
               'type': 'housing',
               'title': 'Mehmonxona',
+              'image': 'assets/images/places/malayziya.png',
               'time': '11:30',
               'field_1': 'New Madina Hotel',
               'field_2': 'New Madinah mehmonxonasining har bir xonasida vanna va xalat bilan jihozlangan shaxsiy ... ',
@@ -220,6 +225,7 @@ class ApiClient {
             {
               'type': 'visit',
               'title': 'Ziyoratgoh',
+              'image': 'assets/images/places/malayziya.png',
               'time': '8:30',
               'field_1': 'Arofat tog\'i',
               'field_2': 'Arafot — Makkadan 20 km uzoqlikda joylashgan, 11 — 12 km va kengligi 6,5 km boʻlgan vodiy...',
@@ -232,6 +238,7 @@ class ApiClient {
             {
               'type': 'flight',
               'title': 'Uchish',
+              'image': null,
               'time': '8:30',
               'field_1': 'Toshkent',
               'field_2': 'Madina',
@@ -239,6 +246,7 @@ class ApiClient {
             {
               'type': 'housing',
               'title': 'Mehmonxona',
+              'image': 'assets/images/places/malayziya.png',
               'time': '11:30',
               'field_1': 'New Madina Hotel',
               'field_2': 'New Madinah mehmonxonasining har bir xonasida vanna va xalat bilan jihozlangan shaxsiy ... ',
@@ -246,6 +254,7 @@ class ApiClient {
             {
               'type': 'visit',
               'title': 'Ziyoratgoh',
+              'image': 'assets/images/places/malayziya.png',
               'time': '8:30',
               'field_1': 'Arofat tog\'i',
               'field_2': 'Arafot — Makkadan 20 km uzoqlikda joylashgan, 11 — 12 km va kengligi 6,5 km boʻlgan vodiy...',
@@ -258,6 +267,7 @@ class ApiClient {
             {
               'type': 'flight',
               'title': 'Uchish',
+              'image': null,
               'time': '8:30',
               'field_1': 'Toshkent',
               'field_2': 'Madina',
@@ -265,6 +275,7 @@ class ApiClient {
             {
               'type': 'housing',
               'title': 'Mehmonxona',
+              'image': 'assets/images/places/malayziya.png',
               'time': '11:30',
               'field_1': 'New Madina Hotel',
               'field_2': 'New Madinah mehmonxonasining har bir xonasida vanna va xalat bilan jihozlangan shaxsiy ... ',
@@ -272,6 +283,7 @@ class ApiClient {
             {
               'type': 'visit',
               'title': 'Ziyoratgoh',
+              'image': 'assets/images/places/malayziya.png',
               'time': '8:30',
               'field_1': 'Arofat tog\'i',
               'field_2': 'Arafot — Makkadan 20 km uzoqlikda joylashgan, 11 — 12 km va kengligi 6,5 km boʻlgan vodiy...',
@@ -284,6 +296,7 @@ class ApiClient {
             {
               'type': 'flight',
               'title': 'Uchish',
+              'image': null,
               'time': '8:30',
               'field_1': 'Toshkent',
               'field_2': 'Madina',
@@ -291,6 +304,7 @@ class ApiClient {
             {
               'type': 'housing',
               'title': 'Mehmonxona',
+              'image': 'assets/images/places/malayziya.png',
               'time': '11:30',
               'field_1': 'New Madina Hotel',
               'field_2': 'New Madinah mehmonxonasining har bir xonasida vanna va xalat bilan jihozlangan shaxsiy ... ',
@@ -298,6 +312,7 @@ class ApiClient {
             {
               'type': 'visit',
               'title': 'Ziyoratgoh',
+              'image': 'assets/images/places/malayziya.png',
               'time': '8:30',
               'field_1': 'Arofat tog\'i',
               'field_2': 'Arafot — Makkadan 20 km uzoqlikda joylashgan, 11 — 12 km va kengligi 6,5 km boʻlgan vodiy...',
@@ -310,6 +325,7 @@ class ApiClient {
             {
               'type': 'flight',
               'title': 'Uchish',
+              'image': null,
               'time': '8:30',
               'field_1': 'Toshkent',
               'field_2': 'Madina',
@@ -317,6 +333,7 @@ class ApiClient {
             {
               'type': 'housing',
               'title': 'Mehmonxona',
+              'image': 'assets/images/places/malayziya.png',
               'time': '11:30',
               'field_1': 'New Madina Hotel',
               'field_2': 'New Madinah mehmonxonasining har bir xonasida vanna va xalat bilan jihozlangan shaxsiy ... ',
@@ -324,6 +341,7 @@ class ApiClient {
             {
               'type': 'visit',
               'title': 'Ziyoratgoh',
+              'image': 'assets/images/places/malayziya.png',
               'time': '8:30',
               'field_1': 'Arofat tog\'i',
               'field_2': 'Arafot — Makkadan 20 km uzoqlikda joylashgan, 11 — 12 km va kengligi 6,5 km boʻlgan vodiy...',
@@ -336,6 +354,7 @@ class ApiClient {
             {
               'type': 'flight',
               'title': 'Uchish',
+              'image': null,
               'time': '8:30',
               'field_1': 'Toshkent',
               'field_2': 'Madina',
@@ -343,6 +362,7 @@ class ApiClient {
             {
               'type': 'housing',
               'title': 'Mehmonxona',
+              'image': 'assets/images/places/malayziya.png',
               'time': '11:30',
               'field_1': 'New Madina Hotel',
               'field_2': 'New Madinah mehmonxonasining har bir xonasida vanna va xalat bilan jihozlangan shaxsiy ... ',
@@ -350,6 +370,7 @@ class ApiClient {
             {
               'type': 'visit',
               'title': 'Ziyoratgoh',
+              'image': 'assets/images/places/malayziya.png',
               'time': '8:30',
               'field_1': 'Arofat tog\'i',
               'field_2': 'Arafot — Makkadan 20 km uzoqlikda joylashgan, 11 — 12 km va kengligi 6,5 km boʻlgan vodiy...',

@@ -2,6 +2,7 @@ import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
 import 'package:travel_app/core/core.dart';
 import 'package:travel_app/package_detail/data/models/day_model.dart';
+import 'package:travel_app/package_detail/presentation/pages/accommodation_item.dart';
 import 'package:travel_app/package_detail/presentation/pages/activity_item.dart';
 import 'package:travel_app/package_detail/presentation/pages/package_calendar_days.dart';
 
@@ -45,9 +46,7 @@ class Calendar extends StatelessWidget {
                   child: Column(
                     spacing: 31,
                     children: [
-                      ActivityItem(),
-                      ActivityItem(),
-                      ActivityItem(),
+                      ActivityItem(activity: calendar[0].activities[0]),
                     ],
                   ),
                 ),

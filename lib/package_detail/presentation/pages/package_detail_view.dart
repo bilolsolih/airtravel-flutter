@@ -86,61 +86,61 @@ class _PackageDetailViewBodyState extends State<PackageDetailViewBody> {
         true => const Center(child: CircularProgressIndicator()),
         false => ListView(
             children: [
-              SizedBox(
-                height: 312 * AppSizes.hratio,
-                child: Stack(
-                  children: [
-                    PageView.builder(
-                      controller: controller,
-                      onPageChanged: (index) => setState(() {
-                        currentIndex = index % imagesCount;
-                      }),
-                      itemBuilder: (context, index) {
-                        final int actualIndex = index % imagesCount;
-                        return Image.asset(
-                          widget.viewModel.package.images[actualIndex],
-                          height: 312 * AppSizes.hratio,
-                          fit: BoxFit.cover,
-                        );
-                      },
-                    ),
-                    Positioned(
-                      bottom: 10,
-                      left: 0,
-                      right: 0,
-                      child: Row(
-                        spacing: 3,
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: List<Widget>.generate(
-                          imagesCount,
-                          (index) => AnimatedContainer(
-                            duration: const Duration(milliseconds: 300),
-                            width: index == currentIndex ? 32 : 8,
-                            height: 8,
-                            decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.circular(4),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              const SizedBox(height: 16),
+              // SizedBox(
+              //   height: 312 * AppSizes.hratio,
+              //   child: Stack(
+              //     children: [
+              //       PageView.builder(
+              //         controller: controller,
+              //         onPageChanged: (index) => setState(() {
+              //           currentIndex = index % imagesCount;
+              //         }),
+              //         itemBuilder: (context, index) {
+              //           final int actualIndex = index % imagesCount;
+              //           return Image.asset(
+              //             widget.viewModel.package.images[actualIndex],
+              //             height: 312 * AppSizes.hratio,
+              //             fit: BoxFit.cover,
+              //           );
+              //         },
+              //       ),
+              //       Positioned(
+              //         bottom: 10,
+              //         left: 0,
+              //         right: 0,
+              //         child: Row(
+              //           spacing: 3,
+              //           mainAxisAlignment: MainAxisAlignment.center,
+              //           children: List<Widget>.generate(
+              //             imagesCount,
+              //             (index) => AnimatedContainer(
+              //               duration: const Duration(milliseconds: 300),
+              //               width: index == currentIndex ? 32 : 8,
+              //               height: 8,
+              //               decoration: BoxDecoration(
+              //                 color: Colors.white,
+              //                 borderRadius: BorderRadius.circular(4),
+              //               ),
+              //             ),
+              //           ),
+              //         ),
+              //       ),
+              //     ],
+              //   ),
+              // ),
+              // const SizedBox(height: 16),
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 13 * AppSizes.wratio),
                 child: Column(
                   spacing: 16,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    TitleAndDescription(
-                      title: widget.viewModel.package.title,
-                      description: widget.viewModel.package.description,
-                    ),
-                    StaysInCities(stays: widget.viewModel.package.stays),
-                    Features(features: widget.viewModel.package.features),
+                    // TitleAndDescription(
+                    //   title: widget.viewModel.package.title,
+                    //   description: widget.viewModel.package.description,
+                    // ),
+                    // StaysInCities(stays: widget.viewModel.package.stays),
+                    // Features(features: widget.viewModel.package.features),
                     Calendar(calendar: widget.viewModel.package.calendar),
                   ],
                 ),
