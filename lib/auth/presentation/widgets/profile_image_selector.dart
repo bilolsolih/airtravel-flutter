@@ -23,11 +23,13 @@ class ProfileImageSelector extends StatelessWidget {
             CircleAvatar(
               radius: 70,
               backgroundColor: Colors.transparent,
+              backgroundImage: AssetImage(viewModel.defaultProfileImage),
+              // foregroundImage: NetworkImage("http://13.232.186.30:8888/uploads/categories/breakfasteee91a20.png"),
               child: viewModel.image != null
                   ? ProfileImage(image: viewModel.image!)
                   : Image.asset(
                       viewModel.defaultProfileImage,
-                      fit: BoxFit.fill,
+                      fit: BoxFit.cover,
                     ),
             ),
             IconButton(

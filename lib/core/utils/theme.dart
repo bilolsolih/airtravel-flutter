@@ -7,6 +7,7 @@ class AppThemes {
     fontFamily: "Urbanist",
     primaryColor: AppColors.mainGreen,
     scaffoldBackgroundColor: Colors.white,
+    splashColor: Colors.blue,
     colorScheme: ColorScheme(
       brightness: Brightness.light,
       primary: AppColors.mainGreen,

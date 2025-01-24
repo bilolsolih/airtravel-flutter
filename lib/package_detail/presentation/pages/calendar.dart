@@ -5,14 +5,15 @@ import 'package:travel_app/package_detail/data/models/day_model.dart';
 import 'package:travel_app/package_detail/presentation/pages/accommodation_item.dart';
 import 'package:travel_app/package_detail/presentation/pages/activity_item.dart';
 import 'package:travel_app/package_detail/presentation/pages/package_calendar_days.dart';
+import 'package:travel_app/package_detail/presentation/pages/package_detail_view_model.dart';
 
 class Calendar extends StatelessWidget {
   const Calendar({
     super.key,
-    required this.calendar,
+    required this.viewModel,
   });
 
-  final List<DayModel> calendar;
+  final PackageDetailViewModel viewModel;
 
   @override
   Widget build(BuildContext context) {
@@ -33,10 +34,10 @@ class Calendar extends StatelessWidget {
           child: Column(
             spacing: 13,
             children: [
-              PackageCalendarDays(days: calendar),
+              PackageCalendarDays(days: viewModel.package.calendar),
               DottedBorder(
                 color: Colors.black,
-                dashPattern: [7, 4],
+                dashPattern: [7, 4, 7, 4, 7, 4, 7, 4],
                 customPath: (size) => Path()
                   ..moveTo(0, 0)
                   ..lineTo(0, size.height),
@@ -46,7 +47,9 @@ class Calendar extends StatelessWidget {
                   child: Column(
                     spacing: 31,
                     children: [
-                      ActivityItem(activity: calendar[0].activities[0]),
+                      ActivityItem(activity: viewModel.package.calendar[0].activities[0]),
+                      ActivityItem(activity: viewModel.package.calendar[0].activities[0]),
+                      ActivityItem(activity: viewModel.package.calendar[0].activities[0]),
                     ],
                   ),
                 ),

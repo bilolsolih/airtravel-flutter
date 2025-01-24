@@ -13,7 +13,9 @@ class AccommodationBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        // Image(image: act),
+        Image(
+          image: AssetImage(activity.image!),
+        ),
       ],
     );
   }

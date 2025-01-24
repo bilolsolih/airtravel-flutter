@@ -24,7 +24,7 @@ class TitleAndDescription extends StatelessWidget {
           boxShadow: const [
             BoxShadow(
               color: Color(0xFFC4C4C4),
-              offset: Offset(1, 1),
+              offset: Offset(0, 0),
               blurRadius: 4,
               spreadRadius: 0,
             )
