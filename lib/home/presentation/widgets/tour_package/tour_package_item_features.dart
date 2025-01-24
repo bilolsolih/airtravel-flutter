@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:travel_app/core/core.dart';
 
-import '../../../../core/presentation/widgets/tour_package/tour_package_feature.dart';
 
 class TourPackageItemFeatures extends StatelessWidget {
   const TourPackageItemFeatures({

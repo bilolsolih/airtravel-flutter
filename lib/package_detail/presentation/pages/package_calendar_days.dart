@@ -1,12 +1,7 @@
-import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:travel_app/core/core.dart';
 import 'package:travel_app/package_detail/data/models/day_model.dart';
-import 'package:travel_app/package_detail/presentation/pages/package_detail_view_model.dart';
 
-import 'package_detail_view.dart';
 
 class PackageCalendarDays extends StatelessWidget {
   PackageCalendarDays({

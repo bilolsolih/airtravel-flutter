@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:travel_app/core/core.dart';
 
-import '../../../../core/presentation/widgets/tour_package/days_in_city.dart';
 
 class TourPackageItemTitle extends StatelessWidget {
   const TourPackageItemTitle({
