@@ -23,7 +23,6 @@ class AppThemes {
       thumbColor: WidgetStatePropertyAll(AppColors.mainGreen),
       thumbVisibility: WidgetStatePropertyAll(true),
       trackVisibility: WidgetStatePropertyAll(true),
-      interactive: true,
       mainAxisMargin: 20,
     ),
   );

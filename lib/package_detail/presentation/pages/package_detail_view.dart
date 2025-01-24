@@ -3,7 +3,11 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:travel_app/core/core.dart';
+import 'package:travel_app/package_detail/presentation/pages/calendar.dart';
+import 'package:travel_app/package_detail/presentation/pages/features.dart';
 import 'package:travel_app/package_detail/presentation/pages/package_detail_view_model.dart';
+import 'package:travel_app/package_detail/presentation/pages/stays_in_cities.dart';
+import 'package:travel_app/package_detail/presentation/pages/title_and_description.dart';
 
 class PackageDetailView extends StatelessWidget {
   const PackageDetailView({
@@ -131,68 +135,13 @@ class _PackageDetailViewBodyState extends State<PackageDetailViewBody> {
                   spacing: 16,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Center(
-                      child: Container(
-                        width: 398 * AppSizes.wratio,
-                        // height: 88 * AppSizes.hratio,
-                        padding: const EdgeInsets.symmetric(vertical: 6, horizontal: 9),
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(10),
-                          boxShadow: const [
-                            BoxShadow(
-                              color: Color(0xFFC4C4C4),
-                              offset: Offset(1, 1),
-                              blurRadius: 4,
-                              spreadRadius: 0,
-                            )
-                          ],
-                        ),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(widget.viewModel.package.title, style: AppStyles.itemSectionTitle),
-                            Text(
-                              widget.viewModel.package.description,
-                              style: TextStyle(
-                                fontSize: 12 * AppSizes.wratio,
-                                fontWeight: FontWeight.bold,
-                                height: 1.2,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
+                    TitleAndDescription(
+                      title: widget.viewModel.package.title,
+                      description: widget.viewModel.package.description,
                     ),
-                    Row(
-                      spacing: 10,
-                      children: [for (var stay in widget.viewModel.package.stays) DaysInCity(days: stay.days, city: stay.city)],
-                    ),
-                    Column(
-                      spacing: 16,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        Text("Sayohat tarkibi", style: AppStyles.itemSectionTitle),
-                        Wrap(
-                          spacing: 6,
-                          runSpacing: 12,
-                          children: [
-                            for (var feature in widget.viewModel.package.features) TourPackageFeature(text: feature.title),
-                          ],
-                        ),
-                      ],
-                    ),
-                    Text("Sayohat kundaligi", style: AppStyles.itemSectionTitle),
-                    Container(
-                      width: 397 * AppSizes.wratio,
-                      height: 552,
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(10),
-                        boxShadow: [BoxShadow(color: Color(0xFFC4C4C4), blurRadius: 4)],
-                      ),
-                    ),
+                    StaysInCities(stays: widget.viewModel.package.stays),
+                    Features(features: widget.viewModel.package.features),
+                    Calendar(calendar: widget.viewModel.package.calendar),
                   ],
                 ),
               ),

@@ -24,7 +24,7 @@ void main() {
 }
 
 GoRouter router = GoRouter(
-  initialLocation: '/',
+  initialLocation: '/detail',
   routes: [
     GoRoute(
       path: '/welcome',
@@ -69,6 +69,14 @@ GoRouter router = GoRouter(
         );
       },
     ),
+    GoRoute(
+      path: '/detail',
+      builder: (context, state) => PackageDetailView(
+        viewModel: PackageDetailViewModel(
+          repo: context.read(),
+        ),
+      ),
+    ),
   ],
 );
 
@@ -88,6 +96,9 @@ class TravelApp extends StatelessWidget {
         ),
         Provider(
           create: (context) => PopularPlacesRepository(client: context.read()),
+        ),
+        Provider(
+          create: (context) => PackageRepository(client: context.read()),
         )
       ],
       child: MaterialApp.router(
