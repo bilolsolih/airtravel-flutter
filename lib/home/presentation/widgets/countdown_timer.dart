@@ -7,6 +7,7 @@ import 'package:travel_app/home/presentation/widgets/timer_container.dart';
 class CountdownTimer extends StatefulWidget {
   const CountdownTimer({super.key});
 
+
   @override
   State<CountdownTimer> createState() => _CountdownTimerState();
 }
@@ -20,6 +21,7 @@ class _CountdownTimerState extends State<CountdownTimer> {
     super.initState();
     startTimer();
   }
+
 
   void startTimer() {
     timer = Timer.periodic(const Duration(seconds: 1), (_) => updateTime());

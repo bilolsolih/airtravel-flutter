@@ -24,7 +24,7 @@ void main() {
 }
 
 GoRouter router = GoRouter(
-  initialLocation: '/detail',
+  initialLocation: '/register',
   routes: [
     GoRoute(
       path: '/welcome',
